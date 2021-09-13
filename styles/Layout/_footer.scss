@@ -1,0 +1,21 @@
+footer{
+    background-color: map-get($colors, 'grey-5');
+    color: white;
+    padding: 0 0 25px 20px;
+    .footer__title{
+        font-family: 'Shrikhand',sans-serif;
+        padding : 20px 0;
+    }
+    a {
+        display: block;
+        line-height: 1.5rem;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+    .footer__link{
+        @include flex (row,auto,center);
+        @extend a ;
+    }
+   
+}
