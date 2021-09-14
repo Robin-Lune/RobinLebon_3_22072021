@@ -1,44 +1,46 @@
-.instruction__bubble-container{
-    @include flex (column,center,center);
-    margin: 0 0 55px 0;
-    .bubble-container__bubble{
-        position: relative;
-        @include flex (row,auto,center);
-        // background-color: lightcoral;
-        height: 50px;
-        border-radius: 15px;
-        width: 80%;
-        padding: 0 10px;
-        margin: 15px 0;
-    box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.15);
-   
-        .bubble__num{
-            @include flex(row,center,center);
-            position: absolute;
-            left: -9px;
-            height: 20px;
-            width: 20px;
-            border-radius: 50%;
-            color: white;
-            background-color: map-get($colors, 'primary') ;
-        }
+.instruction__bubble-container {
+  @include flex(column, center, center);
+  margin: 0 0 55px 0;
+  .bubble-container__bubble {
+    position: relative;
+    @include flex(row, auto, center);
+    // background-color: lightcoral;
+    height: 50px;
+    border-radius: 15px;
+    width: 80%;
+    padding: 0 10px;
+    margin: 15px 0;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
 
-        .bubble__icon{
-            color: map-get($colors , 'grey-3' );
-            margin: 0 15px;
-        }
-        .bubble__text{
-            font-size: 1rem;
-        }
-
-        &:hover{
-            background-color: #f2eafb;
-            .bubble__icon{
-                color: map-get($colors , 'primary' );
-            }
-        }
+    .bubble__num {
+      @include flex(row, center, center);
+      position: absolute;
+      left: -9px;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      color: white;
+      background-color: map-get($colors, "primary");
     }
+
+    .bubble__icon {
+      color: map-get($colors, "grey-3");
+      margin: 0 15px;
+    }
+    .bubble__text {
+      font-size: 1rem;
+    }
+
+    &:hover {
+      background-color: #f2eafb;
+      box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2);
+
+      .bubble__icon {
+        color: map-get($colors, "primary");
+      }
+    }
+  }
 }
-.instruction__title{
-margin: 50px 0 15px 20px;
+.instruction__title {
+  margin: 50px 0 15px 20px;
 }

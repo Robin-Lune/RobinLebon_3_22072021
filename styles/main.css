@@ -121,7 +121,8 @@ header img {
           align-items: center;
   background-color: #f6f6f6;
   text-align: center;
-  height: 288px;
+  height: 100%;
+  width: 100%;
 }
 
 .call-to-action__CTA-main .CTA-main__title {
@@ -170,8 +171,8 @@ header img {
   width: 80%;
   padding: 0 10px;
   margin: 15px 0;
-  -webkit-box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 5px 7px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
 }
 
 .instruction__bubble-container .bubble-container__bubble .bubble__num {
@@ -208,6 +209,8 @@ header img {
 
 .instruction__bubble-container .bubble-container__bubble:hover {
   background-color: #f2eafb;
+  -webkit-box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
 .instruction__bubble-container .bubble-container__bubble:hover .bubble__icon {
@@ -221,6 +224,7 @@ header img {
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .restaurants .restaurants__title {
@@ -241,6 +245,7 @@ header img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .card-container__card {
@@ -258,7 +263,7 @@ header img {
       -ms-flex-align: auto;
           align-items: auto;
   height: 252px;
-  width: 333px;
+  width: calc(100vw - 40px);
   margin-bottom: 15px;
   background-color: white;
   border-radius: 20px;
@@ -273,6 +278,7 @@ header img {
 }
 
 .card-container__card .card__image-container img {
+  z-index: 10;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -283,6 +289,35 @@ header img {
 
 .card-container__card .card__image-container .card__image2 {
   top: -155px;
+}
+
+.card-container__card .card__image-container .card__new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+}
+
+.card-container__card .card__image-container .card__new p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #008766;
 }
 
 .card-container__card .card__description {
@@ -348,5 +383,168 @@ footer .footer__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .header--arrow {
+  position: absolute;
+  left: 20px;
+  font-size: 1.2rem;
+}
+
+.fond-accueil--lapalettedugout {
+  width: auto;
+  height: 260px;
+  background-image: url("../../ressources/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  z-index: 1000;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+  padding: 0 15px;
+  background-color: white;
+}
+
+.menu__title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 35px 35px 20px;
+}
+
+.menu__title-container .title-container__title {
+  font-size: 1.7rem;
+  font-family: "Shrikhand", sans-serif;
+}
+
+.menu__title-container .title-container__like {
+  font-size: 1.2rem;
+}
+
+.menu__subtitle {
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.menu__subtitle::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin-top: 4px;
+  background-color: #99e2d0;
+}
+
+.menu .menu__card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menu__card-container .card-container__menu-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: auto;
+      -ms-flex-pack: auto;
+          justify-content: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  border-radius: 15px;
+  width: 100%;
+  padding-left: 10px;
+  margin: 15px 0;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.menu .menu__card-container .card-container__menu-card .menu-card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.menu .menu__card-container .card-container__menu-card .menu-card__title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.menu .menu__card-container .card-container__menu-card .menu-card__description {
+  font-size: 0.8rem;
+  font-weight: 200;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.menu .menu__card-container .card-container__menu-card .menu-card__price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding-bottom: 1rem;
+  margin-right: 15px;
+}
+
+.menu .menu__card-container .card-container__menu-card:hover .menu-card__check {
+  margin-right: -10px;
+}
+
+.menu-card__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  height: 100%;
+  background-color: #99e2d0;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

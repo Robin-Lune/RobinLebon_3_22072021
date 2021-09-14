@@ -16,6 +16,7 @@ footer{
     .footer__link{
         @include flex (row,auto,center);
         @extend a ;
+        
     }
    
 }

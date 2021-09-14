@@ -1,6 +1,6 @@
 .call-to-action{
     @include flex (column,auto,center);
-    // margin-top: 4px;
+
     height:338px;
     &__localisation{
         @include flex(row,center,center);
@@ -21,7 +21,9 @@
         @include flex (column,auto,center);
         background-color: map-get($colors, 'grey-1');
         text-align: center;
-        height: 288px;
+        height: 100%;
+        width: 100%;
+       
 
         .CTA-main__title{
             margin: 45px 45px 0 45px ;
