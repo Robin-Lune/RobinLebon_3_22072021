@@ -28,7 +28,7 @@
   &__title-container {
     @include flex(row, space-between, center);
     padding: 30px 25px 35px 10px;
-    width:100%;
+    width: 100%;
     .title-container__title {
       font-size: 1.7rem;
       font-family: "Shrikhand", sans-serif;
@@ -36,7 +36,7 @@
     .title-container__like {
       font-size: 1.2rem;
       margin-left: 10px;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
   &__subtitle {
@@ -44,10 +44,11 @@
     font-weight: 200;
     margin-top: 1rem;
     margin-left: 10px;
+    text-transform: uppercase;
     &::after {
       content: "";
       display: block;
-      width: 40px;
+      width: 50px;
       height: 3px;
       margin-top: 4px;
       background-color: #99e2d0;
@@ -71,8 +72,8 @@
         &__text {
           flex: 1;
           white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+          text-overflow: ellipsis;
+          overflow: hidden;
         }
 
         &__title {
@@ -83,7 +84,7 @@
           text-overflow: ellipsis;
           overflow: hidden;
         }
-      
+
         &__description {
           font-size: 0.9rem;
           margin: 0;
@@ -91,12 +92,12 @@
           text-overflow: ellipsis;
           overflow: hidden;
         }
-      
+
         &__price {
           font-weight: bold;
           height: 100%;
-           display: flex;
-           justify-content: flex-end;
+          display: flex;
+          justify-content: flex-end;
           align-items: flex-end;
           padding-left: 0.5rem;
           padding-bottom: 0.9rem;
@@ -117,7 +118,7 @@
       &:hover {
         .menu-card__check {
           margin-right: 0;
-          &__icon{
+          &__icon {
             transform: rotate(1080deg);
             transition-duration: 0.5s;
           }
@@ -126,8 +127,8 @@
     }
   }
 
-  &__button-wrapper{
-    @include flex (row,center,center);
-    width:100%;
+  &__button-wrapper {
+    @include flex(row, center, center);
+    width: 100%;
   }
 }

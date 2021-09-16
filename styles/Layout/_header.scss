@@ -1,12 +1,22 @@
 
 header {
+    position: relative;
     @include flex (row,center,center);
     height:64px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
     z-index: 1000;
-    position: relative;
+  
     img{
         height: 40%;
     }
   
+}
+
+.header__menu {
+    box-shadow: none;
+    .header--arrow{
+        position: absolute;
+        left: 20px;
+        font-size: 1.2rem;
+    }
 }
