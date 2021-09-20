@@ -1,0 +1,29 @@
+.container__heart {
+    position: relative;
+
+    .like {
+      font-size: 1.4rem;
+      transition: 0.5s;
+
+      &--full {
+        font-size: 1.4rem;
+        transition: 0.5s;
+        position: absolute;
+        left: 0px;
+        top: 0;
+        opacity: 0;
+        color: none;
+        fill: url(#gradient-heart);
+        stroke: none;
+      }
+    }
+
+    &:hover {
+      .like--full {
+        opacity: 1;
+      }
+      .like {
+        opacity: 0;
+      }
+    }
+  }

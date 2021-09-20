@@ -78,6 +78,71 @@ header img {
   font-size: 1.2rem;
 }
 
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.container__heart {
+  position: relative;
+}
+
+.container__heart .like {
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container__heart .like--full {
+  font-size: 1.4rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  opacity: 0;
+  color: none;
+  fill: url(#gradient-heart);
+  stroke: none;
+}
+
+.container__heart:hover .like--full {
+  opacity: 1;
+}
+
+.container__heart:hover .like {
+  opacity: 0;
+}
+
 .fond-accueil {
   width: auto;
   height: 260px;
@@ -134,8 +199,6 @@ header img {
 }
 
 .menu__title-container .title-container__like {
-  font-size: 1.2rem;
-  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -196,6 +259,11 @@ header img {
           box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
+  opacity: 0;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
+  -webkit-animation: slide-up  0.75s ease-in-out forwards;
+          animation: slide-up  0.75s ease-in-out forwards;
 }
 
 .menu .menu__card-container .card-container__menu-card .menu-card__text {
@@ -289,6 +357,56 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+#card-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#card-2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+#card-3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+#card-4 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+#card-5 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+#card-6 {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+
+#card-7 {
+  -webkit-animation-delay: 1.3s;
+          animation-delay: 1.3s;
+}
+
+#card-8 {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+#card-9 {
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+}
+
+#card-10 {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
 }
 
 footer {

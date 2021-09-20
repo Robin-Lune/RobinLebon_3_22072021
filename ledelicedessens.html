@@ -31,42 +31,89 @@
     <section class="menu">
       <div class="menu__title-container">
         <h1 class="title-container__title">Le délice des sens</h1>
-        <i class="far fa-heart title-container__like"></i>
+        <div class="container__heart title-container__like">
+          <!-- HEART EMPTY -->
+          <svg
+            class="svg-inline--fa fa-heart fa-w-16 like"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="far"
+            data-icon="heart"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            data-fa-i2svg=""
+          >
+            <path
+              fill="currentColor"
+              d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"
+            ></path>
+          </svg>
+
+          <!-- HEART FULL -->
+          <svg
+            class="heart like--full"
+            viewBox="-20 0 550 550"
+            xml:space="preserve"
+          >
+            <path
+              d="M376,30c-27.783,0-53.255,8.804-75.707,26.168c-21.525,16.647-35.856,37.85-44.293,53.268
+                     c-8.437-15.419-22.768-36.621-44.293-53.268C189.255,38.804,163.783,30,136,30C58.468,30,0,93.417,0,177.514
+                     c0,90.854,72.943,153.015,183.369,247.118c18.752,15.981,40.007,34.095,62.099,53.414C248.38,480.596,252.12,482,256,482
+                     s7.62-1.404,10.532-3.953c22.094-19.322,43.348-37.435,62.111-53.425C439.057,330.529,512,268.368,512,177.514
+                     C512,93.417,453.532,30,376,30z"
+            ></path>
+            <defs>
+              <linearGradient id="gradient-heart">
+                <stop offset="0%" stop-color="#9356DC"></stop>
+                <stop offset="100%" stop-color="#FF79DA"></stop>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
       </div>
-<!-- ENTREE -->
+      <!-- ENTREE -->
       <h2 class="menu__subtitle">Entrées</h2>
 
       <div class="menu__card-container">
-<!-- card1 -->
-        <div class="card-container__menu-card">
+        <!-- card1 -->
+        <div class="card-container__menu-card" id="card-1">
           <div class="menu-card__text">
             <p class="menu-card__title">Tartare de thon</p>
             <span class="menu-card__description">Assaisonné au yuzu</span>
           </div>
           <p class="menu-card__price">25€</p>
-        <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
         </div>
 
         <!-- card2 -->
-        <div class="card-container__menu-card">
+        <div class="card-container__menu-card" id="card-2">
           <div class="menu-card__text">
-            <p class="menu-card__title">Bouchée de homard croustillan</p>
-            <span class="menu-card__description">Et sa farandole de petits légumes</span>
+            <p class="menu-card__title">Bouchée de homard croustillant</p>
+            <span class="menu-card__description"
+              >Et sa farandole de petits légumes</span
+            >
           </div>
           <p class="menu-card__price">35€</p>
-        <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
         </div>
 
         <!-- card3 -->
-        <div class="card-container__menu-card">
+        <div class="card-container__menu-card" id="card-3">
           <div class="menu-card__text">
-            <p class="menu-card__title">Velouté de cèpest</p>
+            <p class="menu-card__title">Velouté de cèpes</p>
             <p class="menu-card__description">Aux truffes</p>
           </div>
           <div class="menu-card__price">
-            <p >20€</p>
+            <p>20€</p>
           </div>
-        <div class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></div>       
+          <div class="menu-card__check">
+            <i class="fas fa-check-circle menu-card__check__icon"></i>
+          </div>
         </div>
       </div>
 
@@ -74,80 +121,90 @@
       <h2 class="menu__subtitle">Plats</h2>
 
       <div class="menu__card-container">
-<!-- card1 -->
-        <div class="card-container__menu-card">
+        <!-- card1 -->
+        <div class="card-container__menu-card" id="card-4">
           <div class="menu-card__text">
             <p class="menu-card__title">Poulet rôti aux herbes de Provence</p>
             <span class="menu-card__description">Et sa crème de truffe</span>
           </div>
           <p class="menu-card__price">40€</p>
-        <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
         </div>
 
         <!-- card2 -->
-        <div class="card-container__menu-card">
+        <div class="card-container__menu-card" id="card-5">
           <div class="menu-card__text">
             <p class="menu-card__title">Langouste rôtie</p>
             <span class="menu-card__description">Et ses légumes de saison</span>
           </div>
           <p class="menu-card__price">35€</p>
-        <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
         </div>
 
         <!-- card3 -->
-        <div class="card-container__menu-card">
+        <div class="card-container__menu-card" id="card-6">
           <div class="menu-card__text">
             <p class="menu-card__title">Côte de boeuf Angus</p>
             <p class="menu-card__description">Et sa purée de panais</p>
           </div>
           <div class="menu-card__price">
-            <p >44€</p>
+            <p>44€</p>
           </div>
-        <div class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></div>       
+          <div class="menu-card__check">
+            <i class="fas fa-check-circle menu-card__check__icon"></i>
+          </div>
         </div>
       </div>
 
- <!-- DESSERT -->
- <h2 class="menu__subtitle">Desserts</h2>
+      <!-- DESSERT -->
+      <h2 class="menu__subtitle">Desserts</h2>
 
- <div class="menu__card-container">
-<!-- card1 -->
-   <div class="card-container__menu-card">
-     <div class="menu-card__text">
-       <p class="menu-card__title">Farandole de desserts</p>
-       <span class="menu-card__description">Du chef</span>
-     </div>
-     <p class="menu-card__price">18€</p>
-   <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
-   </div>
+      <div class="menu__card-container">
+        <!-- card1 -->
+        <div class="card-container__menu-card" id="card-7">
+          <div class="menu-card__text">
+            <p class="menu-card__title">Farandole de desserts</p>
+            <span class="menu-card__description">Du chef</span>
+          </div>
+          <p class="menu-card__price">18€</p>
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
+        </div>
 
-   <!-- card2 -->
-   <div class="card-container__menu-card">
-     <div class="menu-card__text">
-       <p class="menu-card__title">Crème brulée</p>
-       <span class="menu-card__description">Revisitéef</span>
-     </div>
-     <p class="menu-card__price">22€</p>
-   <span class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></span>       
-   </div>
+        <!-- card2 -->
+        <div class="card-container__menu-card" id="card-8">
+          <div class="menu-card__text">
+            <p class="menu-card__title">Crème brulée</p>
+            <span class="menu-card__description">Revisitéef</span>
+          </div>
+          <p class="menu-card__price">22€</p>
+          <span class="menu-card__check"
+            ><i class="fas fa-check-circle menu-card__check__icon"></i
+          ></span>
+        </div>
 
-   <!-- card3 -->
-   <div class="card-container__menu-card">
-     <div class="menu-card__text">
-       <p class="menu-card__title">Tiramisu</p>
-       <p class="menu-card__description">À la noisette</p>
-     </div>
-     <div class="menu-card__price">
-       <p >23€</p>
-     </div>
-   <div class="menu-card__check"><i class="fas fa-check-circle menu-card__check__icon"></i></div>       
-   </div>
- </div>
-<div class="menu__button-wrapper">
-  <button class="main-Button main-Button--menu">Commander</button>
-</div>
-
-
+        <!-- card3 -->
+        <div class="card-container__menu-card" id="card-9">
+          <div class="menu-card__text">
+            <p class="menu-card__title">Tiramisu</p>
+            <p class="menu-card__description">À la noisette</p>
+          </div>
+          <div class="menu-card__price">
+            <p>23€</p>
+          </div>
+          <div class="menu-card__check">
+            <i class="fas fa-check-circle menu-card__check__icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="menu__button-wrapper">
+        <button class="main-Button main-Button--menu">Commander</button>
+      </div>
     </section>
 
     <!-- FOOTER -->

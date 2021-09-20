@@ -1,0 +1,18 @@
+@import "../Utils/animation";
+@import "../Components/loading_animation";
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(white, 0.98);
+    z-index: 10000;
+    animation: fade-out 400ms ease-out forwards 2s;
+    pointer-events: none;
+}
+
