@@ -2,9 +2,7 @@
 @import "../Components/loading_animation";
 
 .loader {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row,center,center);
     position: fixed;
     top: 0;
     right: 0;

@@ -11,15 +11,44 @@
 .restaurants__card-container {
   @include flex(column, center, center);
   width: 100%;
+
+  @include tablet-up {
+    @include flex (row,space-around,center);
+    flex-wrap: wrap;
+  }
+
+  @include desktop-up {
+    @include flex (row,space-around,center);
+    flex-wrap: wrap;
+  }
 }
 
 .card-container__card {
   @include flex(column, auto, auto);
   height: 252px;
   width: calc(100vw - 40px);
+  max-width:335px;
   margin-bottom: 15px;
   background-color: white;
   border-radius: 20px;
+
+  @include tablet-up {
+    width: calc(50vw - 40px);
+    max-width:335px;
+    margin: 15px;
+  }
+  @include desktop-up {
+    max-width:335px;
+    margin: 15px;
+  }
+
+  &:hover{
+    transition: 0.5s;
+    transform : scale(1.02);
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  
 
   .card__image-container {
     position: relative;

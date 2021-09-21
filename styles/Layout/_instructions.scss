@@ -1,16 +1,25 @@
 .instruction__bubble-container {
   @include flex(column, center, center);
   margin: 0 0 55px 0;
+
+  @include desktop-up {
+    @include flex(row,space-around,center)
+  }
+
   .bubble-container__bubble {
     position: relative;
     @include flex(row, auto, center);
-    // background-color: lightcoral;
     height: 50px;
     border-radius: 15px;
     width: 80%;
     padding: 0 10px;
     margin: 15px 0;
     box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.1);
+
+    @include desktop-up {
+      max-width: 350px;
+      margin:20px;
+    }
 
     .bubble__num {
       @include flex(row, center, center);

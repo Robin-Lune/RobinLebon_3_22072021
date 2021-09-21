@@ -18,5 +18,24 @@ footer{
         @extend a ;
         
     }
-   
+
+    .footer__link__container{
+        @include tablet-up {
+            @include flex (row,space-around,center);
+            width:100%;
+            padding: 10px;
+        }
+
+        @include desktop-up{
+            @include flex (row,space-around,center);
+            width:100%;
+            padding: 10px;
+        }
+    }
+    @include tablet-up {
+        @include flex (column,auto,center);  
+    }
+    @include desktop-up {
+        @include flex (column,auto,center);  
+    }
 }
