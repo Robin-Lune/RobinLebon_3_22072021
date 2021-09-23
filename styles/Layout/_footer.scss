@@ -14,7 +14,7 @@ footer{
         color: white;
     }
     .footer__link{
-        @include flex (row,auto,center);
+        @include flex (row,start,center);
         @extend a ;
         
     }
@@ -33,9 +33,9 @@ footer{
         }
     }
     @include tablet-up {
-        @include flex (column,auto,center);  
+        @include flex (column,start,center);  
     }
     @include desktop-up {
-        @include flex (column,auto,center);  
+        @include flex (column,start,center);  
     }
 }

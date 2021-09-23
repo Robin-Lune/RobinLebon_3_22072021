@@ -1,7 +1,7 @@
 @import "../Components/button";
 
 .call-to-action{
-    @include flex (column,auto,center);
+    @include flex (column,start,center);
 
     // height:338px;
     &__localisation{
@@ -20,7 +20,7 @@
     }
     
     &__CTA-main{
-        @include flex (column,auto,center);
+        @include flex (column,start,center);
         background-color: map-get($colors, 'grey-1');
         text-align: center;
         height: 100%;

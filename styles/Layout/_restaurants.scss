@@ -18,13 +18,13 @@
   }
 
   @include desktop-up {
-    @include flex (row,space-around,center);
+    @include flex (row,space-evenly,center);
     flex-wrap: wrap;
   }
 }
 
 .card-container__card {
-  @include flex(column, auto, auto);
+  @include flex(column, start, normal);
   height: 252px;
   width: calc(100vw - 40px);
   max-width:335px;

@@ -62,17 +62,17 @@
     }
   }
   .menu__card-container {
-    @include flex(column, auto, center);
+    @include flex(column, start, center);
 
     @include desktop-up {
-    @include flex(row,auto,auto);
+    @include flex(row,start,start);
     flex-wrap: wrap;
     
     }
 
     .card-container__menu-card {
       position: relative;
-      @include flex(row, auto, center);
+      @include flex(row,start, center);
       height: 70px;
       border-radius: 15px;
       width: 100%;
@@ -121,11 +121,9 @@
         }
 
         &__price {
+          @include flex (row,flex-end,flex-end);
           font-weight: bold;
-          height: 100%;
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
+          height: 100%;        
           padding-left: 0.5rem;
           padding-bottom: 0.9rem;
         }
